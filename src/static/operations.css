@@ -1,0 +1,152 @@
+.operations-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ffffff, #051e80);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left-subsection {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.left-subsection label {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.left-subsection input[type="date"] {
+    padding: 8px;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+}
+
+.left-subsection input[type="text"] {
+    padding: 8px 8px 8px 30px;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 100px;
+    position: relative;
+}
+
+.left-subsection label svg {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3498db;
+    font-size: 16px;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+
+.right-subsection {
+    display: flex;
+    flex: 8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-subsection h1 {
+    font-size: 24px;
+    color: #ffffff;
+
+}
+
+.table-section {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+
+}
+
+th {
+    background-color: #20368d;
+    color: gold;
+}
+
+.search-button {
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #20368d;
+    color: #fff;
+    background-color: #20368d;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
+}
+
+.search-button:hover {
+    color: #000000;
+    background-color: #a2abd0;
+    border: 2px solid #000000;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .header-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-subsection {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .right-subsection h1 {
+        margin-right: 0;
+    }
+
+    .table-section {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        white-space: nowrap;
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+}
